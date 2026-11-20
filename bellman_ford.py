@@ -1,4 +1,8 @@
-# Simulação do algoritmo de Bellman-Ford 
+# ================================================== 
+# SIMULACAO DE REDE DE COMPUTADORES 
+# ALGORITMO DE BELLMAN-FORD
+# ================================================== 
+
 # Aplicação em uma rede de computadores com 5 roteadores. 
  
 # Identificação dos roteadores 
