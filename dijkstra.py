@@ -8,18 +8,17 @@ import heapq
 # Identificacao dos roteadores 
 roteadores = ["A", "B", "C", "D", "E"] 
  
-# Criacao da topologia da rede 
-# Cada enlace possui um custo de transmissao. 
-# As conexoes sao bidirecionais. 
- 
-rede = { 
-    "A": {"B": 2, "C": 5, "E": 10}, 
-    "B": {"A": 2, "C": 1, "D": 4}, 
-    "C": {"A": 5, "B": 1, "D": 2, "E": 5}, 
-    "D": {"B": 4, "C": 2, "E": 1}, 
-    "E": {"A": 10, "C": 5, "D": 1} 
-} 
- 
+# Criacao de uma nova topologia da rede
+# Cada enlace possui um custo de transmissao.
+# As conexoes sao bidirecionais.
+
+rede = {
+    "A": {"B": 4, "C": 8, "E": 3},
+    "B": {"A": 4, "C": 2, "D": 7},
+    "C": {"A": 8, "B": 2, "D": 5, "E": 6},
+    "D": {"B": 7, "C": 5, "E": 2},
+    "E": {"A": 3, "C": 6, "D": 2}
+}
  
 # Funcao que executa o algoritmo de Dijkstra 
 def dijkstra(origem): 
